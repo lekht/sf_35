@@ -40,9 +40,6 @@ func main() {
 func handleFunc(c net.Conn) {
 	for {
 		c.Write([]byte(phrases[rand.Intn(3)] + "\n"))
-		// fmt.Println(phrases[rand.Intn(3)])
 		time.Sleep(3 * time.Second)
 	}
 }
-
-//         conn.Write([]byte(time.Now().String() + "\n"))
